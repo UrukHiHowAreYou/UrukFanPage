@@ -3,6 +3,15 @@
   <head>
     <style>
 
+      a { color: inherit; }
+
+      @font-face {
+      font-family: Atreyu;
+      src:url(fonts/Atreyu.woff);
+      }
+
+      h1 {color:white; font-family:Atreyu; font-size: 60px}
+
 @-webkit-keyframes travel {
   from { left: 0;     }
   to   { left: 1300px; }
@@ -14,7 +23,7 @@
     -webkit-animation-timing-function: ease-out;
   }
   100% {
-    bottom: 460px;
+    bottom: 560px;
     -webkit-animation-timing-function: ease-in;
   }
 }
@@ -37,7 +46,7 @@
     animation-timing-function: ease-out;
   }
   50% {
-    bottom: 460px;
+    bottom: 560px;
     animation-timing-function: ease-in;
   }
 }
@@ -63,14 +72,14 @@
   position: relative;
   margin: 1em auto;
   width: 1320px;
-  height: 480px;
+  height: 580px;
   border: 1px solid #666;
 }
 
 #traveler {
   position: absolute;
   width: 40px;
-  height: 480px;
+  height: 580px;
 
   -webkit-animation-name: travel;
   -webkit-animation-timing-function: linear;
@@ -130,14 +139,31 @@
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body style="background-image: url('https://urukhihowareyou.github.io/UrukFanPage/images/Balrog.jpg');background-repeat:no-repeat;background-attachment:fixed;background-size:cover;">
+  <body style="background-image: url('https://urukhihowareyou.github.io/UrukFanPage/images/Balrog.jpg');background-repeat:no-repeat;background-attachment:non-fixed;background-size:cover;">
 
+  <a name="top"></a>
     <div id="stage" >
 <div id="traveler">
 <div id="bouncer">SMELLS</div>
 <div id="bouncer2">ADAM</div>
 </div>
 </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+      <h1>
+        <a href="urukmain.html">YOU SHALL NOT PASS</a>
+        </h1>
+      </center>
+
+
+
+  <a href="MEAT.html" target="_blank"><button>Contact Me at:</button></a> <a href="#top"><button>Back to top</button></a>
+
 
   </body>
 </html>
