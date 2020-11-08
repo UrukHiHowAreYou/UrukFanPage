@@ -5,6 +5,250 @@
     <title></title>
 
     <style>
+    #sidebar{
+    background:#151718;
+    width:200px;
+    height:100%;
+    display:block;
+    position:absolute;
+    left:-200px;
+    top:0px;
+    transition:left 0.3s linear;
+    }
+
+    #sidebar.visible{
+    left:0px;
+    transition:left 0.3s linear;
+    }
+
+    ul{
+    margin:0px;
+    padding:0px;
+    }
+
+    ul li{
+    list-style:none;
+    }
+
+    ul li a{
+    background:#1C1E1F;
+    color:#ccc;
+    border-bottom:1px solid #111;
+    display:block;
+    width:180px;
+    padding:10px;
+    text-decoration: none;
+    }
+
+    #sidebar-btn{
+    display:inline-block;
+    vertical-align: middle;
+    width:20px;
+    height:15px;
+    cursor:pointer;
+    margin:20px;
+    position:absolute;
+    top:0px;
+    right:-60px;
+    }
+
+    #sidebar-btn span{
+    height:1px;
+    background:#f08a5d;
+    margin-bottom:5px;
+    display:block;
+    }
+
+    #sidebar-btn span:nth-child(2){
+    width:75%;
+    }
+
+    #sidebar-btn span:nth-child(3){
+    width:50%;
+    }
+
+    body{
+      margin:0px
+    }
+
+    .dropbtn  {
+    background-color: inherit;
+    color: inherit;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+              }
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+              }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f8efd4;
+    min-width: 200px;
+    z-index: 1;
+                      }
+
+    dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+                        }
+
+    a:hover {color: white;}
+
+
+    .dropdown-content a:hover {color: white;}
+    .dropdown:hover .dropdown-content {display: block;}
+    .dropdown:hover .dropbtn {background-color: inherit;}
+
+
+
+    /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box1 {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 0px solid #f1f1f;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box1:hover .flip-box-inner1 {
+  transform: rotateY(180deg);
+}
+
+
+
+/* Position the front and back side */
+.flip-box-front1, .flip-box-back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front1 {
+  background-color:transparent;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back1 {
+  background-color: inherit;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box2 {
+background-color: transparent;
+width: 100px;
+height: 100px;
+border: 0px solid #f1f1f1;
+perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner2 {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box2:hover .flip-box-inner2 {
+transform: rotateY(180deg);
+}
+
+
+
+/* Position the front and back side */
+.flip-box-front2, .flip-box-back2 {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden; /* Safari */
+backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front2 {
+background-color:transparent;
+color: black;
+}
+
+/* Style the back side */
+.flip-box-back2 {
+background-color: inherit;
+color: white;
+transform: rotateY(180deg);
+}
+
+    /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: transparent;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(-180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color:transparent;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: white;
+  color: white;
+  transform: rotateX(180deg);
+}
 
     #banner {
             position: absolute;
@@ -52,40 +296,150 @@
 
 
     h6{color:#b83b5e; font-family:FuturaMed; font-size:24px}
-    h1{color:#f08a5d; font-family:Hand; font-size:150px;}
+    h1{color:#f08a5d; font-family:Hand; font-size:170px;}
     h2{color:#6a2c70; font-family:Stoked; font-size:45px;}
     h3{color:#b83b5e; font-family:Hand; font-size:45px;}
+    h5{color:#b83b5e; font-family:FuturaMed; font-size:20px;}
+    h6{color:#b83b5e; font-family:FuturaHeavy; font-size:20px;}
     p {color:#6a2c70; font-family:FuturaMed;}
     td{color:#6a2c70; font-family:FuturaMed;}
+    a {color:inherit; text-decoration: none;}
 
     p {
     background: #FFFFFF;
     }
 
     table{
-      background:#eeecda
+
     }
 
+    .rotate180 {
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+               }
 
     </style>
 
   </head>
-  <body style=";">
+  <body>
+
+    <div id="sidebar">
+
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+      </ul>
+
+      <div id="sidebar-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+
+    $(document).ready(function(){
+      $('#sidebar-btn').click(function(){
+        $('#sidebar').toggleClass('visible');
+      });
+    });
+
+    </script>
 
 <center>
 
 
-<table cellspacing=10>
+<table cellspacing=10 style="background:#f8efd4">
+  <tr style="height:30px">
+
+  </tr>
+  <tr>
+
+  </tr>
 <tr>
-<td style="text-align:right">
-  <a href=FlapjackHell.html>HELP</a>
+<td>
+
+<table>
+<tr style="width:100vw">
+  <td style="width:15vw"></td>
+  <td style="width:45vw">
+  <div class="flip-box2">
+  <div class="flip-box-inner2">
+  <div class="flip-box-front2">
+    <img src="images/flaps crop.png" width=100px>
+  </div>
+  <div class="flip-box-back2">
+    <p style="background-color:inherit"><br>Priya is the best</p>
+
+  </div>
+  </div>
+  </div></td>
+
+<td style="font-size:18px;text-align:right;width:30vw">
+
+<div class="dropdown">
+<button class="dropbtn"><a href=FlapjackHell.html>HELP</a></button>
+<div class="dropdown-content" style="text-align:left;padding:16px;width:200px">
+
+    <a href=FlapjackHell.html>ME</a>
+    <br>
+    <br>
+    <a href=FlapjackHell.html>PLEASE</a>
+
+</div>
+</div>
 </td>
 
+<td style="font-size:18px;text-align:right;width:10vw;color:#b83b5e">
+  <div class="dropdown">
+  <button class="dropbtn">  <a href=FlapjackHell.html>ABOUT</a>  </button>
+  <div class="dropdown-content" style="text-align:left;padding:16px;width:200px">
+
+  <a href="https://www.gov.uk/contact-jobcentre-plus">TIME</a>
+  <br>
+  <br>
+  <a href="https://www.gov.uk/contact-jobcentre-plus">YOU GOT</a>
+  <br>
+  <br>
+  <a href="https://www.gov.uk/contact-jobcentre-plus">A JOB</a>
+</td>
+<td style="font-size:18px;text-align:right;width:10vw;color:#b83b5e">
+  <div class="dropdown">
+  <button class="dropbtn">  <a href=FlapjackHell.html>BASKET</a>  </button>
+  <div class="dropdown-content" style="text-align:left;padding:16px;width:200px">
+
+  EMPTY
+  <br>
+  <br>
+  $0.00
+</td>
+  <td  style="width:15vw"></td>
 </tr>
+</table>
+
+</td>
+</tr>
+
+
 <tr>
 
+<td>
+  <table>
+    <tr>
 
-<td style="width:1500px">
+<td style="width:200px"></td>
+<td style="width:75%">
 <center>
 
 
@@ -98,19 +452,36 @@
     <br><hr style="width:1%">
     I've got here a little list of that you like?
     <br><hr style="width:1%">
-    Sometimes picking flapjacks can be tricky, but if I can't then I just pick my favourite.
+    Sometimes picking flapjacks can be tricky, but if I pick my favourite.
   </h6>
 <br>
 <br>
-<hr>
 <br>
 <br>
-<img src="images/Flappyjack crop.png" height=200px width=200px>
+<br>
+<div class="flip-box1">
+<div class="flip-box-inner1">
+<div class="flip-box-front1">
+  <img src="images/Flappyjack crop.png" height=200px width=200px>
+</div>
+<div class="flip-box-back1">
+  <h2>No flapjacks here</h2>
+
+</div>
+</div>
+</div>
 <br>
 <br>
 <hr>
 
 </center>
+</td>
+
+<td style="width:200px"></td>
+
+</tr>
+</table>
+
 </td>
 </tr>
 </table>
@@ -118,23 +489,122 @@
   </body>
   <body>
     <br>
+    <hr style="color:purple;width:4%">
+    <br>
     <br>
     <center>
+      <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/Flappyjack crop.png" height=200px width=200px class="rotate180" style="filter:flipH">
+      </div>
+      <div class="flip-box-back">
+        <h2>Nope</h2>
+        <center>
+        <p>None here either</p>
+        </center>
+      </div>
+    </div>
+  </div>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="background-color:white;">SOOOOOOO,</h1>
     <p>
+      YOU WANNA KNOW
       <br>
       <br>
-      LOTS OF TEXT
       <br>
-      SOME MORE TEXT
       <br>
-      and the final line
+      <br>
+      <br>
+      how I got these flappies?
+      <br>
+      <br>
       <br>
       <br>
     </p>
-    <h1 style="background-color:white;">YOOOOOOO</h1>
-    </center>
+    <h2 style="font-size:36px">Well let me tell you a little something...</h2>
 
-    <button><a href="MEAT.html" target="_blank">Contact Me at:</a></button> <a href="#top"><button type="button" name="button">Back to top</button></a>
+    <table cellspacing="50">
+      <tr>
+        <td><img src="images/flapjacks/1.png" width="200px"></td>
+        <td style="color:#f08a5d">YA THINK THIS IS EASY?</td>
+                <td>
+                  <h3>YOU DONT KNOW</h3>
+                  LIFE CAN BE FRUSTRATING
+                  <br>
+                  YA EVER TRIED MAKING FLAPJACKS OUTTA FLINT AND BELLY FLUFF</td>
+      </tr>
+    </table>
+    <table cellspacing="50">
+      <tr>
+        <td>
+          <h3>OI YOU</h3>
+          HOWD YOU GET IN HERE
+          <br>
+          DONT GET BETWEEN A MAN AND HIS PICKLE</td>
+          <td style="color:#f08a5d">WELL ITS NOT</td>
+        <td><img src="images/flapjacks/2.png" width="200px"></td>
+
+
+      </tr>
+    </table>
+    <table cellspacing="50">
+      <tr>
+        <td><img src="images/flapjacks/3.png" width="200px"></td>
+        <td style="color:#f08a5d">ITS ACTUALLY VERY HARD</td>
+                <td>
+                  <h3>BUT AH WHO AM I</h3>
+                  THATS THE REAL QUESTION
+                  <br>
+                  GOT NO BONE TO PICK WITH A BONELESS MAN</td>
+      </tr>
+    </table>
+
+    <br><br>
+
+      <div style="display:inline-block;">
+        <h5>Created and curated by</h5>
+        </div>
+        <div style="display:inline-block;">
+        <h6> Mustard Chair</h6>
+      </div>
+      <div style="display:inline-block;">
+        <h5>in association with</h5>
+      </div>
+      <div style="display:inline-block;">
+        <h6> Tabletop Mouse.</h6>
+      </div>
+
+      </div>
+
+</center>
+
+
+    <table style="background-color: #edc988; width:100%">
+    <tr>
+    <td height=10px></td>
+    </tr>
+    <tr>
+    <td style="min-width:8vw;text-align:center;">
+      <a href="MEAT.html" target="_blank">CONTACT MEAT</a>
+    </td>
+    <td style="min-width:80vw;text-align:center">
+      <a href="urukmain.html" target="_blank">BACK TO MAIN</a>
+    </td>
+    <td style="min-width:8vw;text-align:center">
+       <a href="#top">BACK TO TOP</a>
+    </td>
+    </tr>
+    <tr>
+    <td height=5px></td>
+    </tr>
+    </table>
+
+
   </body>
 </html>
