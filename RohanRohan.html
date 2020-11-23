@@ -1,112 +1,285 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <style media="screen">
-    body{
-margin:0px;
-padding:0px;
-font-family:"Helvetica Neue", Helvetica, Arial;
-}
 
-#sidebar{
-background:#151718;
-width:200px;
-height:100%;
-display:block;
-position:absolute;
-left:-200px;
-top:0px;
-transition:left 0.3s linear;
-}
+<head>
 
-#sidebar.visible{
-left:0px;
-transition:left 0.3s linear;
-}
+  <link rel="stylesheet" href="Rohansidebar.css">
+  <link rel="stylesheet" href="css/cookie.css">
+  <link rel="icon" href="icons/rohan2favicon.ico">
 
-ul{
-margin:0px;
-padding:0px;
-}
+  <style media="screen">
+    body {
+      margin: 0px;
+      padding: 0px;
+      font-family: "Helvetica Neue", Helvetica, Arial;
+    }
 
-ul li{
-list-style:none;
-}
-
-ul li a{
-background:#1C1E1F;
-color:#ccc;
-border-bottom:1px solid #111;
-display:block;
-width:180px;
-padding:10px;
-text-decoration: none;
-}
-
-#sidebar-btn{
-display:inline-block;
-vertical-align: middle;
-width:20px;
-height:15px;
-cursor:pointer;
-margin:20px;
-position:absolute;
-top:0px;
-right:-60px;
-}
-
-#sidebar-btn span{
-height:1px;
-background:#111;
-margin-bottom:5px;
-display:block;
-}
-
-#sidebar-btn span:nth-child(2){
-width:75%;
-}
-
-#sidebar-btn span:nth-child(3){
-width:50%;
-}
-    </style>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-
-    <body>
-
-    	<div id="sidebar">
-
-    		<ul>
-    			<li><a href="#">Link 1</a></li>
-    			<li><a href="#">Link 2</a></li>
-    			<li><a href="#">Link 3</a></li>
-    			<li><a href="#">Link 4</a></li>
-    			<li><a href="#">Link 5</a></li>
-    		</ul>
-
-    		<div id="sidebar-btn">
-    			<span></span>
-    			<span></span>
-    			<span></span>
-    		</div>
-
-    	</div>
+    a:hover {
+      color: white;
+    }
 
 
 
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    	<script>
+    div.sticky {
 
-    	$(document).ready(function(){
-    		$('#sidebar-btn').click(function(){
-    			$('#sidebar').toggleClass('visible');
-    		});
-    	});
+      position: sticky;
+      top: 5rem;
+      background-color: white;
+      padding: 0px;
+      width: 100px;
 
-    	</script>
+    }
 
-  </body>
+
+
+
+    #header {
+      position: fixed;
+      z-index: 1;
+      background-color: white;
+      height: 5rem;
+      width: 100vw;
+      border-bottom: 1px solid;
+    }
+
+    #footer {
+      position: fixed;
+      z-index: 1;
+      background-color: white;
+      height: 3rem;
+      width: 100vw;
+      border-top: nothing;
+    }
+
+    #header-title {
+      float: center;
+    }
+
+    #header-navigation {
+      float: right;
+    }
+
+    #footer-title {
+      float: center;
+    }
+
+    #footer-navigation {
+      float: right;
+    }
+
+    img {
+      -webkit-filter: grayscale(100%);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+    }
+
+    #head1 {
+      position: fixed;
+      z-index: 200;
+    }
+
+    #head2 {
+      /* position: fixed; */
+      z-index: 201;
+    }
+  </style>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<a name="top"></a>
+
+  <div id="head2">
+
+
+    <div class="cookie_consent" id="cookie_consent" style="display: block;">
+      <div>
+        We use cookies to enable an improved browsing-experience robotic agent to understand human behaviour patterns, and to share your information with the government and/or terrorists.
+        By continuing to access the website, you agree that we will store your personal data in a filing cabinet, in the back of a disused Argos, in the corrupt People's Republic of Uganda, as outlined in our Privacy Policy.
+        <a href="/"
+          onclick="document.cookie = 'cookie_consent_for_lomography=given;expires=' + (new Date(Date.now() + 31536000000)).toUTCString() + ';path=/;domain=.lomography.com'; document.getElementById('cookie_consent').style.display = 'none'; return false;">I
+          agree.</a>
+
+
+      </div>
+    </div>
+    <script>
+      try {
+        if (('; ' + document.cookie).split('; cookie_consent_for_lomography=').pop().split(';').shift() === '') {
+          document.getElementById('cookie_consent').style.display = 'block';
+        }
+      } catch (error) {}
+    </script>
+  </div>
+
+  <div id="head1">
+
+    <div id="sidebar">
+
+      <ul>
+        <li><a href="urukmain.html">Muddy Jiff Lord Main Hall</a></li>
+        <li><a href="#">The Lank Hair of Shelob's Teenage Lair</a></li>
+        <li><a href="BilbosBouncingBalls.html">Bilbo Baggin's Bag of Balrog Balls</a></li>
+        <li><a href="#">A Troll's Tale of Trick-or-Teat Treachery and Tickling Turnip-titties</a></li>
+        <li><a href="#">Gandalf's Secret Over-30s Wizard Vault</a></li>
+        <li><a href="#">Undeniably Undeveloped Undertakings In The Undying Lands</a></li>
+        <li><a href="Flapjack.html">Faramir's Favourite Flapjack Flavours</a></li>
+        <li><a href="RohanRohan.html">A day in the life of Peter Jackson Rohan Rohan</a></li>
+      </ul>
+
+      <div id="sidebar-btn">
+        ROHAN ROHAN
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#sidebar-btn').click(function() {
+        $('#sidebar').toggleClass('visible');
+      });
+    });
+  </script>
+
+
+  <center>
+    <div>
+      <div id="header">
+        <div id="header-title">
+          <table>
+            <tr>
+              <td style="width:15vw">
+              </td>
+              <td style="text-align:right;width:31.5vw">
+                <p style="background:white">A DAY IN THE LIFE</p>
+              </td>
+              <td style="text-align:right;width:35vw;opacity:70%">SUBSCRIBE</td>
+              <td style="text-align:right;width:5vw;opacity:70%">LOGIN</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </center>
+  <div style="position:fixed;z-index:102;transform: translateZ(0);
+    -webkit-transform: translateZ(0);">
+    <br>
+    <br>
+    <hr>
+  </div>
+  <br><br><br><br>
+  <br><br><br><br>
+  <center>
+    <h1>LOTR</h1>
+    <h1>LOTR</h1>
+    <h1>LOTR</h1>
+    <h1>LOTR</h1>
+    <h1>LOTR</h1>
+    <h1>LOTR</h1>
+    <h1>LOTR</h1>
+  </center>
+
+  <div id="footer">
+    <div id="footer-title">
+      <table style="background:white">
+
+        <tr>
+          <td style="text-align:left;width:19vw">
+            Contact Meat
+          </td>
+          <td style="text-align:center;width:80vw">
+
+            <h1>LOTR</h1>
+            <h1>LOTR</h1>
+
+          </td>
+          <td style="text-align:center;width:20vw"><a href="#top">Back to top</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <br><br><br><br><br>
+  <div>
+    <div class="sticky">
+      <h1>The Goddess Priya</h1>
+    </div>
+    <center>
+      <p style="width:600px;font-size:30px;text-transform:uppercase;">
+        Priya is wonderful and beautiful and she has a great butt.
+        Honestly it's like the celestial beings plucked dwarf stars from the milky way
+        and squished them into a butt.<br>It's that good.</p>
+    </center>
+  </div>
+
+  <br><br><br><br><br><br><br><br>
+
+
+
+
+  <div>
+    <div class="sticky">
+      <h1>Theoden's Thoughts</h1>
+    </div>
+    <center>
+      <table cellspacing=50 style="padding-left:110px;padding-right:110px">
+        <tr>
+          <td style="text-align:right;width:57vw">“Where now are the horse and the rider? Where is the horn that was blowing?
+            Where is the helm and the hauberk, and the bright hair flowing?
+            Where is the harp on the harpstring, and the red fire glowing?
+            Where is the spring and the harvest and the tall corn growing?
+            They have passed like rain on the mountain, like a wind in the meadow;
+            The days have gone down in the West behind the hills into shadow.
+            Who shall gather the smoke of the deadwood burning,
+            Or behold the flowing years from the Sea returning?”</td>
+          <td style="width:40.5vw"><img src="images/rohanrohan/BBB.jpg" width=545px></td>
+        </tr>
+
+        <tr>
+          <td>
+            <br><br><br><br><br><br>
+          </td>
+        </tr>
+
+        <tr>
+
+          <td style="width:57vw"><img src="images/rohanrohan/tree of gondor.jpg" width=600px></td>
+          <td style="text-align:left;width:46.5vw">“Gondor? Where was Gondor when the Westfold fell? Where was Gondor when our enemies closed in around us!?”</td>
+
+        </tr>
+
+        <tr>
+          <td style="text-align:right;width:57vw">
+            “Where now are the horse and the rider? Where is the horn that was blowing?
+            Where is the helm and the hauberk, and the bright hair flowing?
+            Where is the harp on the harpstring, and the red fire glowing?
+            Where is the spring and the harvest and the tall corn growing?
+            They have passed like rain on the mountain, like a wind in the meadow;
+            The days have gone down in the West behind the hills into shadow.
+            Who shall gather the smoke of the deadwood burning,
+            Or behold the flowing years from the Sea returning?”
+          </td>
+          <td style="width:46.5vw"><img src="images/rohanrohan/BBB.jpg" width=500px></td>
+        </tr>
+
+        <tr>
+          <td>
+            <br><br><br><br><br><br>
+          </td>
+        </tr>
+      </table>
+
+    </center>
+  </div>
+</body>
+
 </html>

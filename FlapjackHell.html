@@ -3,8 +3,115 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style media="screen">
+    body{
+margin:0px;
+padding:0px;
+font-family:"Helvetica Neue", Helvetica, Arial;
+}
+
+#sidebar{
+background:#151718;
+width:200px;
+height:100%;
+display:block;
+position:absolute;
+left:-200px;
+top:0px;
+transition:left 0.3s linear;
+opacity:80%;
+}
+
+#sidebar.visible{
+left:0px;
+transition:left 0.3s linear;
+}
+
+ul{
+margin:0px;
+padding:0px;
+}
+
+ul li{
+list-style:none;
+}
+
+ul li a{
+background:#1C1E1F;
+color:#ccc;
+border-bottom:1px solid #111;
+display:block;
+width:180px;
+padding:10px;
+text-decoration: none;
+opacity:80%;
+}
+
+#sidebar-btn{
+display:inline-block;
+vertical-align: middle;
+width:20px;
+height:15px;
+cursor:pointer;
+margin:20px;
+position:absolute;
+top:0px;
+right:-60px;
+}
+
+#sidebar-btn span{
+height:1px;
+background:white;
+margin-bottom:5px;
+display:block;
+}
+
+#sidebar-btn span:nth-child(2){
+width:75%;
+}
+
+#sidebar-btn span:nth-child(3){
+width:50%;
+}
+
+a:hover {color: white;}
+    </style>
   </head>
   <body style="background-image: url('https://urukhihowareyou.github.io/UrukFanPage/images/denethor.jpg');background-repeat:no-repeat;background-attachment:fixed;background-size:cover;">
+
+    <div id="sidebar">
+
+      <ul>
+        <li><a href="urukmain.html">Muddy Jiff Lord Main Hall</a></li>
+        <li><a href="#">The Lank Hair of Shelob's Teenage Lair</a></li>
+        <li><a href="BilbosBouncingBalls.html">Bilbo Baggin's Bag of Balrog Balls</a></li>
+        <li><a href="#">A Troll's Tale of Trick-or-Teat Treachery and Tickling Turnip-titties</a></li>
+        <li><a href="#">Gandalf's Secret Over-30s Wizard Vault</a></li>
+        <li><a href="#">Undeniably Undeveloped Undertakings In The Undying Lands</a></li>
+        <li><a href="Flapjack.html">Faramir's Favourite Flapjack Flavours</a></li>
+        <li><a href="RohanRohan.html">A day in the life of Peter Jackson Rohan Rohan</a></li>
+      </ul>
+
+      <div id="sidebar-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+
+    $(document).ready(function(){
+      $('#sidebar-btn').click(function(){
+        $('#sidebar').toggleClass('visible');
+      });
+    });
+
+    </script>
+
   <p>and what of it</p>
+
   </body>
 </html>

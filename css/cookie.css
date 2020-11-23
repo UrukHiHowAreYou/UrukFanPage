@@ -1,0 +1,25 @@
+.cookie_consent {
+  display: none;
+  background-color: #fae397;
+  color: #000000;
+  font-family: FuturaMed;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.cookie_consent>div {
+  box-sizing: border-box;
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.cookie_consent>div>a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+@font-face {
+font-family:FuturaMed;
+src:url(fonts/Futura-Book-font.woff);
+}

@@ -1,0 +1,54 @@
+
+body   {
+  background-color: white;
+  margin:0px;
+  padding:0px;
+  text-align: center;
+       }
+
+h1     {
+width: 40%;
+margin: 0 auto;
+       }
+
+.thetop{
+  background-color: #71979c;
+}
+#688d93
+.topWrapper{ margin:0 400px 0 400px; }
+
+
+#a4b3ae
+.themid{
+  height:200px;
+  width:200px;
+  border:solid 20px #0e1712;
+  border-style:solid;
+
+  margin-left:260px;
+  background-color:#829292;
+      }
+
+.thebot{
+  height:200px;
+  width:200px;
+  border:solid 10px #0e1712;
+  border-style:solid;
+
+  margin-left:500px;
+  background-color:#426060;
+}
+
+
+
+* {
+
+  font-family:Coldiac;
+}
+
+#ded9c6
+#d7d3d4
+#a4b3ae
+#829292
+#426060
+#0e1712

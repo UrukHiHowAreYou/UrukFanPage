@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="Rohansidebar.css">
+    <link rel="stylesheet" href="css/cookie.css">
     <style>
 
-    @font-face {
-    font-family: Atreyu;
-    src:url(fonts/Atreyu.woff);
+    body{
+    margin:0px;
+    padding:0px;
+    font-family:"Helvetica Neue", Helvetica, Arial;
     }
 
-    @font-face {
-    font-family: Viner;
-    src:url(fonts/vineritc.woff);
-    }
-
-    a  {color:inherit;}
+    a  {color:inherit; font-family: ;text-decoration:none;}
     h1 {color:white; font-family:Atreyu; font-size: 60px}
     h2 {color:white; font-family:Viner; font-size: 30px}
     h3 {color:white;}
@@ -21,9 +20,12 @@
     h5 {color:white;}
     h6 {color:white;}
     li {color:white;}
-    p {color:white;}
-    td {color:white;}
-    th {color:white;}
+    p {color:white; font-family:Coldiac;}
+    td {color:white; font-family:Coldiac;}
+    th {color:white; font-family:Coldiac;}
+    #header {
+            position:fixed;
+            z-index:201;}
     #banner {
             position: absolute;
             top: 0;
@@ -83,14 +85,65 @@
       100% { transform: translate(1px, -2px) rotate(-1deg); }
     }
 
+    #sidebar-btn { right: -45px; margin: 12px; }
 
+    a:hover {color: white;}
 
+    ul li a{background: none;
+    color: #ccc;
+    border-bottom: none;"}
 
     </style>
     <meta charset="utf-8">
     <title>Adam Smells Website Gallery and Appraisals</title>
   </head>
-  <body style="background-image:url('https://urukhihowareyou.github.io/UrukFanPage/mines_of_moriar.jpg');background-repeat:no-repeat;background-attachment:fixed;background-size:cover;">
+  <body style="margin:0px;padding:0px;background-image:url('https://urukhihowareyou.github.io/UrukFanPage/mines_of_moriar.jpg');background-repeat:no-repeat;background-attachment:fixed;background-size:cover;">
+
+    <div class="cookie_consent" id="cookie_consent" style="display: block;position:fixed;z-index:202;width:100vw">
+      <div>
+        We and our partners use technologies, such as cookies, to recognize you and show you more of what you like. Please read our <a href="/about/privacy">Privacy Policy</a> to learn more. By using this website you agree to the use of those
+        technologies.
+        <a href="/"
+          onclick="document.cookie = 'cookie_consent_for_lomography=given;expires=' + (new Date(Date.now() + 31536000000)).toUTCString() + ';path=/;domain=.lomography.com'; document.getElementById('cookie_consent').style.display = 'none'; return false;">I
+          agree.</a>
+      </div>
+    </div>
+    <script>try { if (('; '+document.cookie).split('; cookie_consent_for_lomography=').pop().split(';').shift() === '') { document.getElementById('cookie_consent').style.display = 'block'; } } catch(error) {}</script>
+
+    <div id="header">
+
+    <div id="sidebar">
+
+      <ul style="background: #111;
+      color: #ccc;
+      border-bottom: 1px solid #111;">
+          <li><a href="urukmain.html">Muddy Jiff Lord Main Hall</a></li>
+          <li><a href="ShelobsLair">The Lank Hair of Shelob's Teenage Lair</a></li>
+          <li><a href="BilbosBouncingBalls.html">Bilbo Baggin's Bag of Balrog Balls</a></li>
+          <li><a href="#">A Troll's Tale of Trick-or-Teat Treachery and Tickling Turnip-titties</a></li>
+          <li><a href="GandalfClub.html">Gandalf's Secret Over-30s Wizard Vault</a></li>
+          <li><a href="#">Undeniably Undeveloped Undertakings In The Undying Lands</a></li>
+          <li><a href="Flapjack.html">Faramir's Favourite Flapjack Flavours</a></li>
+          <li><a href="RohanRohan.html">A day in the life of Peter Jackson Rohan Rohan</a></li>
+      </ul>
+
+      <div id="sidebar-btn">
+        <img src="UrukHighHand.jpg" width="72px" height="65px" style="opacity:70%">
+      </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+
+    $(document).ready(function(){
+      $('#sidebar-btn').click(function(){
+        $('#sidebar').toggleClass('visible');
+      });
+    });
+
+    </script>
+  </div>
 
   <div class="urukBanner" style="padding-top:7px">
 
@@ -139,7 +192,7 @@
     <h2>and other adventures</h2>
     <img src="uruh high.jpg" class="bwahaha">
     <p>
-      And then I says to him "What about their legs, they don't need those!"
+      And then I says to him <i>"What about their legs, they don't need those!"</i>
     </p>
 
     </center>
@@ -165,7 +218,7 @@
 
         <ul>
           <li>
-            The Lank Hair of Shelob's Teenage Lair (2006 myspace page)
+            <a href="ShelobsLair.html">The Lank Hair of Shelob's Teenage Lair (2006 myspace page)</a>
           </li>
           <br/>
           <li>
@@ -173,15 +226,15 @@
           </li>
           <br/>
           <li>
-            A Troll's Tale of Trick-or-Teat Treachery and Tickling Turnip-titties
+            <a href="" style="padding:0px">A Troll's Tale of Trick-or-Teat Treachery and Tickling Turnip-titties</a>
           </li>
           <br/>
           <li>
-            Gandalf's Secret Over-30s Wizard Vault (forum)
+            <a href="GandalfClub.html">Gandalf's Secret Over-30s Wizard Vault (forum & fanpage)</a>
           </li>
           <br/>
           <li>
-            Through the Gondor and out the Presentwindow: Ten Stories High and Falling
+            <a href="TheGondor.html">Through the Gondor and out the Presentwindow: Ten Stories High and Falling</a>
           </li>
           <br/>
           <li>
@@ -193,7 +246,7 @@
           </li>
           <br/>
           <li>
-            A day in the life of Peter Jackson Rohan Rohan (horrible blog)
+            <a href="RohanRohan.html">A day in the life of Peter Jackson Rohan Rohan</a>
           </li>
           <br/>
           <li>Yo momma</li>
@@ -274,9 +327,9 @@
               <table cellspacing="20" style="min-height:700px;">
                 <thead>
                   <tr>
-                    <th>
+                    <th>Uruk Captain
                     </th>
-                    <th> </th>
+                    <th>Kill Count</th>
                     <th style="text-align:left"> </th>
                   </tr>
                 </thead>
@@ -333,13 +386,27 @@
 
 </center>
     <hr />
-    <h1 style="text-align:center">DONT THROW AWAY <a href="THE.html" target="_blank">THE LIQUID FROM THE CHICKEN</a></h1>
+    <h1 style="text-align:center;color:lightgrey">DON'T THROW AWAY <a href="THE.html" target="_blank">THE LIQUID FROM THE CHICKEN</a></h1>
 
   <br>
   <br>
+  <table style="background: rgba(0,0,0,0.5)">
+    <tr>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="text-align:left;width:50vw">
 
-  <button><a href="MEAT.html" target="_blank">Contact Me at:</a></button> <a href="#top"><button type="button" name="button">Back to top</button></a>
-  <br />
+  <a href="MEAT.html" target="_blank">Contact Me at:</a>
+      </td>
+      <td style="text-align:right;width:50vw">
+  <a href="#top">Back to top</a>
+      </td>
+      <tr>
+        <td></td>
+      </tr>
+</tr>
+</table>
 
   </body>
 

@@ -1,0 +1,158 @@
+body      {    margin: 0px;  padding: 0px;  font-family: "Helvetica Neue", Helvetica, Arial;  }
+
+h1        {    font-family: FuturaMed;  }
+p         {    font-family: FuturaHeavy;  font-size: 18px;  }
+a         {    color:inherit; text-decoration:none;  }
+li        {    font-family: Arial;  }
+
+#article-title {
+  padding:150px 200px 0px 200px
+                }
+
+#title    {
+  text-align:left;font-size:70px;width:50vw;
+  margin-bottom:30px; margin-top:20px;
+          }
+
+.article  {
+  padding:50px 200px 50px 200px;
+          }
+
+.article-text   {
+  font-family:FuturaMed;font-size:23px;line-height:35px;width:50vw;
+                }
+
+.article-text-serif   {
+  font-family:PlayfairReg;font-size:23px;line-height:35px;width:50vw;
+                }
+
+.article-text-opening
+                {
+  font-family:FuturaMed;font-size:23px;line-height:35px;
+                }
+
+#article-author {
+  margin-bottom:0px;font-family:Coldiac;font-size:20px;color:grey;
+  margin-top:30px;
+                }
+
+#article-date   {
+  margin-top:20px;font-family:Coldiac;font-size:20px;color:lightgrey;
+                }
+
+#article-header {
+  position: relative;
+                }
+
+.article-image  {
+  padding:0 200px; display:inline-block;
+                }
+
+.article-hr     {
+  width:50vw;margin:0px 200px;
+                }
+
+.Login    {
+  display:inline; margin:25px; float:right;
+  font-family:FuturaMed; padding-right:100px;
+          }
+
+#Logo     {
+   display:inline; float:left; padding-left:100px
+          }
+
+#nav      {
+  display:inline; margin:25px; float:left;
+  font-family:FuturaMed; padding-left:400px;
+          }
+
+#head1    {
+  position: fixed;
+  z-index: 203;
+          }
+
+#header-top     {
+  height:65.5px; width:100vw; position:absolute;
+  background: linear-gradient(to right, white 6.7%, transparent 6.75% 16.3%, white 16%); z-index:201;
+                }
+
+#header-beneath {
+  height:65.5px; width:100vw; position:fixed;
+  background:black; z-index:200;
+                }
+
+.SubDir         {
+  padding-left:30px;
+  font-weight:bold;
+                }
+
+.SubDir:hover   {
+  color:DeepSkyBlue;
+                }
+
+#userReact      {
+  position:absolute;right:0px;top:0px;
+                }
+
+.img-caption    {
+  padding:0px 200px 0px 200px;
+  font-size:14px;
+  font-family:Coldiac;
+                }
+
+.tag            {
+  padding:10px;
+  background-color:black;
+  color:white;
+  display:inline-block;
+  font-family: RobotoReg;
+                }
+
+/* PROGRESS BAR */
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background: transparent;
+                    }
+
+.progress-bar       {
+  height: 4px;
+  background: DeepSkyBlue;
+  width: 0%;
+                    }
+
+
+/* COMMENT SECTION */
+#respond {
+  margin-top: 40px;
+}
+
+#respond input[type='text'],
+#respond input[type='email'],
+#respond textarea {
+  margin-bottom: 10px;
+  display: block;
+  width: 50vw;
+  max-width: 50vw;
+  min-width: 50vw;
+
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+
+  line-height: 1.4em;
+}
+#commentBox textarea {
+  min-height:4rem;
+  height:6rem;
+}
+
+
+::selection {
+  background: gold;
+            }
