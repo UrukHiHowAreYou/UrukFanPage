@@ -112,9 +112,14 @@
     <h6 id="article-author">Saruman the Wise</h6>
     <h6 id="article-date">February</h6>
   </div>
+
   <div>
-    <img src="images/lights.jpg" width="100%" alt="">
+    <figure class="article-image-main">
+      <img src="GandalfClub/orcPhotog/snickersOrc.jfif" width="100%" alt="snickers_orc">
+      <figcaption class="img-caption-main">Orc with Snickers, 1020 BC, colourised</figcaption>
+    </figure>
   </div>
+
   <div class="article">
     <p class="article-text-opening">
       "There is no 'symbolism' or conscious allegory in my story," insisted J. R. R. Tolkien.
@@ -123,6 +128,13 @@
       The first Swedish edition of The Lord of the Rings, for example, explains to the reader that Sauron, the personification of the satanic, is to be read perhaps as Stalin.
       "There is no 'perhaps' about it," raged Tolkien. "I utterly repudiate any such 'reading,' which angers me."
     </p>
+  </div>
+
+  <div class="article-image">
+    <figure class="article-image-inline">
+      <img src="GandalfClub/orcPhotog/monsterOrc.jfif" height="700px" alt="snickers_orc">
+      <figcaption class="img-caption">Orc with Snickers, 1020 BC, colourised</figcaption>
+    </figure>
   </div>
 
   <div class="article">
@@ -134,6 +146,77 @@
       <br>
       In order to be quite clear, Tolkien explains that "I cordially dislike allegory in all its manifestations [and] I much prefer history, true or feigned, with its varied applicability to the thought and experience of readers" (Tolkien 1966: xvi-xvii).
   </div>
+
+  <div class="article-image">
+    <figure class="article-image-inline">
+      <img src="GandalfClub/orcPhotog/burgerOrc.jfif" width="550px" alt="snickers_orc">
+      <figcaption class="img-caption">Orc with Snickers, 1020 BC, colourised</figcaption>
+    </figure>
+    <figure style="display:inline-block;width:10px;margin:0px">
+
+    </figure>
+    <figure class="article-image-inline">
+      <img src="GandalfClub/orcPhotog/flowersOrc.jfif" width="550px" alt="snickers_orc">
+      <figcaption class="img-caption">Orc with Snickers, 1020 BC, colourised</figcaption>
+    </figure>
+  </div>
+
+  <hr class="article-hr" style="margin-top:50px">
+
+  <div class="article">
+    <h2 style="font-size:14px">A STORY ABOUT</h2>
+    <br>
+    <div class="tag">
+      Horses
+    </div>
+    <div class="tag">
+      Hobbitses
+    </div>
+    <div class="tag">
+      Rohan Riders
+    </div>
+    <div class="tag">
+      Old White Men
+    </div>
+  </div>
+
+  <hr class="article-hr">
+
+  <div class="article">
+    <h1>Your weekly dose of wizarding news straight to your inbox.</h1>
+    <input type="text" name="email" value="" placeholder="Email address" style="border-radius:25px;border-style:solid;border-color:black;padding:10px;font-size:15px">
+    <input type="submit" name="submit" value="Submit" class="submit">
+  </div>
+
+  <hr style="margin:100px 0 0 0;">
+
+  <a name="comment"></a>
+  <div id="comment-section" style="padding:50px 200px 50px 200px">
+    <h1 style="font-family:FuturaHeavy">Comments</h1>
+    <div id="respond">
+      <form action="post_comment.php" method="post" id="commentform">
+
+        <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required" placeholder="Name" style="border-radius:25px;border-style:solid;border-color:black;padding:10px;font-size:15px">
+
+        <input type="email" name="email" id="email" value="" tabindex="2" required="required" placeholder="Email" style="border-radius:25px;border-style:solid;border-color:black;padding:10px;font-size:15px">
+
+        <div id="commentBox">
+
+          <textarea name="comment" id="comment" rows="4" tabindex="4" required="required" placeholder="Add your comment..." style="font-family:Arial;border-radius:25px;border-style:solid;border-color:black;padding:10px;font-size:15px"></textarea>
+        </div>
+
+        <!-- comment_post_ID value hard-coded as 1 -->
+        <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+        <div style="width:50vw;position:relative;">
+          <input name="submit" type="submit" value="Submit" class="submit" style="position:absolute;right:-25px">
+        </div>
+
+      </form>
+    </div>
+    <br>
+    <br>
+  </div>
+  <hr class="article-hr">
 </body>
 
 </html>

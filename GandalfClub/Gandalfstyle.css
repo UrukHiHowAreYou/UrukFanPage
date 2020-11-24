@@ -15,11 +15,11 @@ li        {    font-family: Arial;  }
           }
 
 .article  {
-  padding:50px 200px 50px 200px;
+  padding:40px 200px 40px 200px;
           }
 
 .article-text   {
-  font-family:FuturaMed;font-size:23px;line-height:35px;width:50vw;
+  font-family:FuturaMed;font-size:23px;line-height:35px;width:50vw;margin:0px;
                 }
 
 .article-text-serif   {
@@ -37,7 +37,7 @@ li        {    font-family: Arial;  }
                 }
 
 #article-date   {
-  margin-top:20px;font-family:Coldiac;font-size:20px;color:lightgrey;
+  margin-top:20px;margin-bottom:0px;font-family:Coldiac;font-size:20px;color:lightgrey;
                 }
 
 #article-header {
@@ -45,8 +45,29 @@ li        {    font-family: Arial;  }
                 }
 
 .article-image  {
-  padding:0 200px; display:inline-block;
+  padding:0 0px 0 200px; display:inline-block ; margin:0px;
                 }
+
+.article-image-main  {
+  margin:0px; width:100%;
+                       }
+
+.article-image-inline  {
+  margin:0px; display:inline-block;
+                }
+
+                .img-caption    {
+                  padding:15px 0px 0px 0px;
+                  font-size:14px;
+                  font-family:Coldiac;
+                                }
+
+                .img-caption-main  {
+                  padding:15px 0px 0px 200px;
+                  font-size:14px;
+                  font-family:Coldiac;
+                                   }
+
 
 .article-hr     {
   width:50vw;margin:0px 200px;
@@ -58,7 +79,7 @@ li        {    font-family: Arial;  }
           }
 
 #Logo     {
-   display:inline; float:left; padding-left:100px
+   display:inline; float:left; padding-left:6.5%;
           }
 
 #nav      {
@@ -72,7 +93,7 @@ li        {    font-family: Arial;  }
           }
 
 #header-top     {
-  height:65.5px; width:100vw; position:absolute;
+  height:65.5px; width:100%; position:absolute;
   background: linear-gradient(to right, white 6.7%, transparent 6.75% 16.3%, white 16%); z-index:201;
                 }
 
@@ -94,11 +115,6 @@ li        {    font-family: Arial;  }
   position:absolute;right:0px;top:0px;
                 }
 
-.img-caption    {
-  padding:15px 200px 0px 200px;
-  font-size:14px;
-  font-family:Coldiac;
-                }
 
 .tag            {
   padding:10px;
@@ -152,6 +168,15 @@ li        {    font-family: Arial;  }
   height:6rem;
 }
 
+.submit {
+  background:black;color:white;font-weight:bold;
+  border-radius:25px;border-style:solid;border-color:black;
+  padding:10px;font-size:15px
+        }
+
+.submit:hover {
+  background:white;color:black;font-weight:bold;
+              }
 
 ::selection {
   background: gold;
