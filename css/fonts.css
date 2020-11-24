@@ -1,4 +1,14 @@
 @font-face {
+  font-family:Ashbury;
+  src: url(fonts/AshburyLig.woff);
+}
+
+@font-face {
+  font-family: Sina;
+  src: url(fonts/SinaReg.woff);
+}
+
+@font-face {
   font-family:PlayfairReg;
   src: url(fonts/PlayfairDisplay-Regular.woff);
 }
