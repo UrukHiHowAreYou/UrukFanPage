@@ -15,7 +15,7 @@ li        {    font-family: Arial;  }
           }
 
 .article  {
-  padding:40px 200px 40px 200px;
+  padding:20px 200px 40px 200px;
           }
 
 .article-text   {
@@ -57,7 +57,7 @@ li        {    font-family: Arial;  }
                 }
 
 .article-image-main  {
-  margin:0px; width:100%;
+  margin:0px 0px 20px 0px; width:100%;
                        }
 
 .article-image-inline  {
@@ -171,9 +171,19 @@ li        {    font-family: Arial;  }
 
   line-height: 1.4em;
 }
+
+.inputBox {
+  border-radius:25px;border-style:solid;border-color:black;padding:10px;font-size:15px;
+          }
+
+input     {
+  outline:none;
+          }
+
 #commentBox textarea {
   min-height:4rem;
   height:6rem;
+  outline:none;
 }
 
 .submit {

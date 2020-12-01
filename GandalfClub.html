@@ -108,10 +108,22 @@
 
 
   <div id="article-title">
-    <p style="color:DeepSkyBlue">Welcome</p>
-    <h1 id="title">Welcome to: Gandalf's Secret Over 30s Wizard Club</h1>
-    <h6 id="article-author">Gandalf the Grey</h6>
-    <h6 id="article-date">November </h6>
+    <div>
+      <p style="color:DeepSkyBlue">Welcome</p>
+    </div>
+    <div id="article-header">
+      <h1 id="title">Welcome to: Gandalf's Secret Over 30s Wizard Club</h1>
+      <div id="userReact">
+        <h3 style="margin:0px;">
+          Share
+        </h3>
+        <h3>
+          <a href="#comment">Comment</a>
+        </h3>
+      </div>
+      <h6 id="article-author">Gandalf the Grey</h6>
+      <h6 id="article-date">November </h6>
+    </div>
   </div>
   <div class="article">
     <p class="article-text-opening">
@@ -119,7 +131,10 @@
     </p>
   </div>
   <div>
-    <img src="GandalfClub/rohanhorseclub/edoras.jpg" width="100%" alt="">
+      <figure class="article-image-main">
+      <img src="GandalfClub/rohanhorseclub/edoras.jpg" width="100%" alt="man children">
+      <figcaption class="img-caption-main">Someone has actually done this.</figcaption>
+    </figure>
   </div>
   <div class="article">
     <p class="article-text" style="font-family:Sina;">
@@ -132,67 +147,69 @@
 
   <div class="article-image">
     <figure class="article-image-inline">
-      <img src="GandalfClub/gandalf-2.jpg" height="700px" alt="snickers_orc">
+      <img src="GandalfClub/gandalf-2.jpg" width="700px" alt="snickers_orc">
       <figcaption class="img-caption">Our lord and saviour Jesus McKellan</figcaption>
     </figure>
   </div>
 
-    <hr class="article-hr" style="margin-top:50px">
 
-    <div class="article">
-      <h2 style="font-size:14px">A STORY ABOUT</h2>
-      <br>
-      <div class="tag">
-        Horses
-      </div>
-      <div class="tag">
-        Hobbitses
-      </div>
-      <div class="tag">
-        Rohan Riders
-      </div>
-      <div class="tag">
-        Old White Men
-      </div>
+  <!-- END OF THE LINE -->
+  <hr class="article-hr" style="margin-top:50px">
+
+  <div class="article">
+    <h2 style="font-size:14px">A STORY ABOUT</h2>
+    <br>
+    <div class="tag">
+      Wizzies
     </div>
-
-    <hr class="article-hr">
-
-    <div class="article">
-      <h1>Your weekly dose of wizarding news straight to your inbox.</h1>
-      <input type="text" name="email" value="" placeholder="Email address" style="border-radius:25px;border-style:solid;border-color:black;padding:10px;font-size:15px">
-      <input type="submit" name="submit" value="Submit" class="submit">
+    <div class="tag">
+      Hobbitses
     </div>
-
-    <hr style="margin:100px 0 0 0;">
-
-    <a name="comment"></a>
-    <div id="comment-section" style="padding:50px 200px 50px 200px">
-      <h1 style="font-family:FuturaHeavy">Comments</h1>
-      <div id="respond">
-        <form action="post_comment.php" method="post" id="commentform">
-
-          <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required" placeholder="Name" style="border-radius:25px;border-style:solid;border-color:black;padding:10px;font-size:15px">
-
-          <input type="email" name="email" id="email" value="" tabindex="2" required="required" placeholder="Email" style="border-radius:25px;border-style:solid;border-color:black;padding:10px;font-size:15px">
-
-          <div id="commentBox">
-
-            <textarea name="comment" id="comment" rows="4" tabindex="4" required="required" placeholder="Add your comment..." style="font-family:Arial;border-radius:25px;border-style:solid;border-color:black;padding:10px;font-size:15px"></textarea>
-          </div>
-
-          <!-- comment_post_ID value hard-coded as 1 -->
-          <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
-          <div style="width:50vw;position:relative;">
-            <input name="submit" type="submit" value="Submit" class="submit" style="position:absolute;right:-25px">
-          </div>
-
-        </form>
-      </div>
-      <br>
-      <br>
+    <div class="tag">
+      Gandhi
     </div>
-    <hr class="article-hr">
+    <div class="tag">
+      Children of Men & Men who are Children
+    </div>
+  </div>
+
+  <hr class="article-hr">
+
+  <div class="article">
+    <h1>Your weekly dose of wizarding news straight to your inbox.</h1>
+    <input type="text" name="email" value="" placeholder="Email address" style="border-radius:25px;border-style:solid;border-color:black;padding:10px;font-size:15px">
+    <input type="submit" name="submit" value="Submit" class="submit">
+  </div>
+
+  <hr style="margin:100px 0 0 0;">
+
+  <a name="comment"></a>
+  <div id="comment-section" style="padding:50px 200px 50px 200px">
+    <h1 style="font-family:FuturaHeavy">Comments</h1>
+    <div id="respond">
+      <form action="post_comment.php" method="post" id="commentform">
+
+        <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required" placeholder="Name" style="border-radius:25px;border-style:solid;border-color:black;padding:10px;font-size:15px">
+
+        <input type="email" name="email" id="email" value="" tabindex="2" required="required" placeholder="Email" style="border-radius:25px;border-style:solid;border-color:black;padding:10px;font-size:15px">
+
+        <div id="commentBox">
+
+          <textarea name="comment" id="comment" rows="4" tabindex="4" required="required" placeholder="Add your comment..." style="font-family:Arial;border-radius:25px;border-style:solid;border-color:black;padding:10px;font-size:15px"></textarea>
+        </div>
+
+        <!-- comment_post_ID value hard-coded as 1 -->
+        <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+        <div style="width:50vw;position:relative;">
+          <input name="submit" type="submit" value="Submit" class="submit" style="position:absolute;right:-25px">
+        </div>
+
+      </form>
+    </div>
+    <br>
+    <br>
+  </div>
+  <hr class="article-hr">
 </body>
 
 </html>

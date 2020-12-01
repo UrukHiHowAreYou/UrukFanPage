@@ -142,14 +142,63 @@
       In my feverish, sweat-soaked sheets I turn and toss as 50 other children think "But they said it the same way?" Hell has nothing new in store for me.
   </div>
 
-  <hr>
-  <a name="top"></a>
-  <div id="comment-section" style="padding:50px 200px 50px 200px">
-    <h1 style="font-family:FuturaHeavy">Comments</h1>
-    <div class="comment box">
+  <!-- END OF THE LINE -->
+  <hr class="article-hr" style="margin-top:50px">
 
+  <div class="article">
+    <h2 style="font-size:14px">A STORY ABOUT</h2>
+    <br>
+    <div class="tag">
+      Sticks
+    </div>
+    <div class="tag">
+      Balls
+    </div>
+    <div class="tag">
+      Golfin' & Dolphins
+    </div>
+    <div class="tag">
+      Childhood SHAME
     </div>
   </div>
+
+  <hr class="article-hr">
+
+  <div class="article">
+    <h1>Your weekly dose of wizarding news straight to your inbox.</h1>
+    <input type="text" name="email" value="" placeholder="Email address" style="border-radius:25px;border-style:solid;border-color:black;padding:10px;font-size:15px">
+    <input type="submit" name="submit" value="Submit" class="submit">
+  </div>
+
+  <hr style="margin:100px 0 0 0;">
+
+  <a name="comment"></a>
+  <div id="comment-section" style="padding:50px 200px 50px 200px">
+    <h1 style="font-family:FuturaHeavy">Comments</h1>
+    <div id="respond">
+      <form action="post_comment.php" method="post" id="commentform">
+
+        <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required" placeholder="Name" style="border-radius:25px;border-style:solid;border-color:black;padding:10px;font-size:15px">
+
+        <input type="email" name="email" id="email" value="" tabindex="2" required="required" placeholder="Email" style="border-radius:25px;border-style:solid;border-color:black;padding:10px;font-size:15px">
+
+        <div id="commentBox">
+
+          <textarea name="comment" id="comment" rows="4" tabindex="4" required="required" placeholder="Add your comment..." style="font-family:Arial;border-radius:25px;border-style:solid;border-color:black;padding:10px;font-size:15px"></textarea>
+        </div>
+
+        <!-- comment_post_ID value hard-coded as 1 -->
+        <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+        <div style="width:50vw;position:relative;">
+          <input name="submit" type="submit" value="Submit" class="submit" style="position:absolute;right:-25px">
+        </div>
+
+      </form>
+    </div>
+    <br>
+    <br>
+  </div>
+  <hr class="article-hr">
 </body>
 
 </html>
