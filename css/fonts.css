@@ -19,6 +19,17 @@
 }
 
 @font-face {
+  font-family:HavanaRound;
+  src: url(fonts/Havana-Rounded.woff);
+}
+
+@font-face {
+  font-family:MontserratBlack;
+  src: url(fonts/Montserrat-Black.woff);
+}
+
+
+@font-face {
   font-family: RobotoReg;
   src: url(fonts/RobotoMono-Regular.woff);
 }
@@ -49,8 +60,8 @@ src:Calafia-Regular.woff;
            }
 
 @font-face {
-            font-family:Hand;
-           src:url(fonts/Handletter.woff);
+font-family:Hand;
+src:url(fonts/Handletter.woff);
                       }
 
 @font-face {
